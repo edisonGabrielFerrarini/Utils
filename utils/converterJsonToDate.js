@@ -1,4 +1,3 @@
-
 module.exports.dateComplete = (date) => {
   const dateConverter = date.split("/")
   const formattedDate = {
@@ -46,6 +45,5 @@ module.exports.monthExtensiveToMonthAndYear = (date) => {
     month: monthArray[dateConverter[0].toLowerCase()],
     year: dateConverter[1],
   }
-
   return formattedDate
 }
