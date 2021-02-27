@@ -1,5 +1,5 @@
 
-module.exports.converterJsonToDateComplete = (date) => {
+module.exports.dateComplete = (date) => {
   const dateConverter = date.split("/")
   const formattedDate = {
     day: dateConverter[0],
@@ -9,16 +9,23 @@ module.exports.converterJsonToDateComplete = (date) => {
   return formattedDate
 }
 
-module.exports.converterJsonToMonthAndYear = (date) => {
+module.exports.monthAndYear = (date) => {
   const dateConverter = date.split("/")
+  if(dateConverter.length >= 3) {
+    const formattedDate = {
+      month: dateConverter[1],
+      year: dateConverter[2],
+    }
+    return formattedDate
+  } 
   const formattedDate = {
-    month: dateConverter[1],
-    year: dateConverter[2],
+    month: dateConverter[0],
+    year: dateConverter[1],
   }
   return formattedDate
 }
 
-module.exports.converterMonthExtensiveToDate = (date) => {
+module.exports.monthExtensiveToMonthAndYear = (date) => {
   const dateConverter = date.split("/")
   const monthArray = {
     'jan': 1, 
