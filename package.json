@@ -1,0 +1,22 @@
+{
+  "name": "utils",
+  "version": "1.0.0",
+  "description": "Pack de Utils",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edisonGabrielFerrarini/Utils.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edisonGabrielFerrarini/Utils/issues"
+  },
+  "homepage": "https://github.com/edisonGabrielFerrarini/Utils#readme",
+  "dependencies": {
+    "pdf-parse": "^1.1.1"
+  }
+}
